@@ -110,7 +110,7 @@ def send_static(filename):
     return static_file(filename, root='/path/to/static/files')
 ```
 
-### [Error Pages](https://bottlepy.org/docs/dev/tutorial.html#error-pages)
+### [Error Pages](https://bottlepy.org/docs/dev/tutorial.html#error-pages), [Abort and Redirect](https://bottlepy.org/docs/dev/tutorial.html#http-errors-and-redirects)
 HTTP status code with the error() decorator:
 ```python
 from bottle import error
