@@ -83,3 +83,18 @@ def do_login():
     else:
         return "<p>Login failed.</p>"
 ```
+
+### [Routing Static Files](https://bottlepy.org/docs/dev/tutorial.html#routing-static-files)
+Route to static files by name:
+```python
+from bottle import static_file
+@route('/static/<filename>')
+def server_static(filename):
+    return static_file(filename, root='/path/to/your/static/files')
+```
+Route to a static files directory:
+```python
+@route('/static/<filepath:path>')
+def server_static(filepath):
+    return static_file(filepath, root='/path/to/your/static/files')
+```
