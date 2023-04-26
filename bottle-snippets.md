@@ -133,3 +133,10 @@ def get_latin():
     response.content_type = 'text/html; charset=latin9'
     return u'ISO-8859-15 is also known as latin9.'
 ```
+
+Force a file download:
+```python
+@route('/download/<filename:path>')
+def download(filename):
+    return static_file(filename, root='/path/to/static/files', download=filename)
+```
