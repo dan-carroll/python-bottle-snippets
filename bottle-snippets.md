@@ -6,7 +6,7 @@ Much of this information is gleaned from many online sources. I wanted to includ
 
 ### “Hello World” in a bottle
 A proper hello world:
-```
+```python
 from bottle import route, run
 
 @route('/hello')
@@ -15,8 +15,8 @@ def hello():
 
 run(host='localhost', port=8080, debug=True)
 ```
-Hello <name>:
-```
+Hello \<name\>:
+```python
 from bottle import route, run, template
 
 @route('/hello/<name>')
