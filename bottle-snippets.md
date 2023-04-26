@@ -1,10 +1,10 @@
 # Python Bottle Snippets
-Much of this information is gleaned from many online sources. I wanted to include as many code references as I could for my own use, and to share with others looking for code samples for Bottle.
+Much of this information is gleaned from many online sources. I wanted to include as many code references as I could for my own use, and to share with others looking for code samples for Bottle. And I will link to appropriate documentation and tutorials (if possible).
 
 ## Bottle
 [Bottle](https://bottlepy.org/docs/dev/) is a fast, simple and lightweight WSGI micro web-framework for Python.
 
-### “Hello World” in a bottle
+### [“Hello World” in a bottle](https://bottlepy.org/docs/dev/tutorial.html#quickstart-hello-world)
 A proper hello world:
 ```python
 from bottle import route, run
@@ -33,7 +33,7 @@ def greet(name='Stranger'):
     return template('Hello {{name}}, how are you?', name=name)
 ```
 
-### Dynamic Routes
+### [Dynamic Routes](https://bottlepy.org/docs/dev/tutorial.html#dynamic-routes)
 Dynamic routes with wildcards:
 ```python
 @route('/wiki/<pagename>')            # matches /wiki/Learning_Python
