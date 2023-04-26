@@ -20,5 +20,7 @@ Collection of code snippets for the bottle web framework.
 
 ## [The bottlepy development blog](https://blog.bottlepy.org/)
 
-## [Python Markdown Editor](https://github.com/ncornette/Python-Markdown-Editor) Standalone editor for your local markdown files
+## [Python Markdown Editor](https://github.com/ncornette/Python-Markdown-Editor)
+Standalone editor for your local markdown files. Linking to this because it was tagged with "bottlepy". Maybe it can be included in (bottle) python projects.
+
 ### [Python Markdown Editor Webpage](https://python-markdown.github.io/)
