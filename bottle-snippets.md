@@ -98,3 +98,12 @@ Route to a static files directory:
 def server_static(filepath):
     return static_file(filepath, root='/path/to/your/static/files')
 ```
+
+### [Error Pages](https://bottlepy.org/docs/dev/tutorial.html#error-pages)
+HTTP status code with the error() decorator:
+```python
+from bottle import error
+@error(404)
+def error404(error):
+    return 'Nothing here, sorry'
+```
