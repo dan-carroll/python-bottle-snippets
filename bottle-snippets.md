@@ -98,6 +98,17 @@ Route to a static files directory:
 def server_static(filepath):
     return static_file(filepath, root='/path/to/your/static/files')
 ```
+Directly return [static files](https://bottlepy.org/docs/dev/tutorial.html#static-files) and provide mime type:
+```python
+from bottle import static_file
+@route('/images/<filename:re:.*\.png>')
+def send_image(filename):
+    return static_file(filename, root='/path/to/image/files', mimetype='image/png')
+
+@route('/static/<filename:path>')
+def send_static(filename):
+    return static_file(filename, root='/path/to/static/files')
+```
 
 ### [Error Pages](https://bottlepy.org/docs/dev/tutorial.html#error-pages)
 HTTP status code with the error() decorator:
