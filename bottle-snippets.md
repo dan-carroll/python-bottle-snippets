@@ -32,3 +32,13 @@ Multiple routes on a single callback function and a default keyword argument:
 def greet(name='Stranger'):
     return template('Hello {{name}}, how are you?', name=name)
 ```
+Dynamic routes with wildcards:
+```python
+@route('/wiki/<pagename>')            # matches /wiki/Learning_Python
+def show_wiki_page(pagename):
+    ...
+
+@route('/<action>/<user>')            # matches /follow/defnull
+def user_api(action, user):
+    ...
+```
