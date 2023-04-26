@@ -15,7 +15,7 @@ def hello():
 
 run(host='localhost', port=8080, debug=True)
 ```
-Hello /<name/>:
+Hello <name>:
 ```
 from bottle import route, run, template
 
