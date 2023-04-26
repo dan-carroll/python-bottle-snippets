@@ -155,3 +155,15 @@ Force a file download:
 def download(filename):
     return static_file(filename, root='/path/to/static/files', download=filename)
 ```
+
+### [Cookies](https://bottlepy.org/docs/dev/tutorial.html#cookies)
+Set and Get cookies:
+```python
+@route('/hello')
+def hello_again():
+    if request.get_cookie("visited"):
+        return "Welcome back! Nice to see you again"
+    else:
+        response.set_cookie("visited", "yes")
+        return "Hello there! Nice to meet you"
+```
