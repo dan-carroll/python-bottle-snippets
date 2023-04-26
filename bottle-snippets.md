@@ -4,3 +4,14 @@ Much of this information is gleaned from many online sources. I wanted to includ
 ## Bottle
 [Bottle](https://bottlepy.org/docs/dev/) is a fast, simple and lightweight WSGI micro web-framework for Python.
 
+### “Hello World” in a bottle
+'''
+from bottle import route, run, template
+
+@route('/hello/<name>')
+def index(name):
+    return template('<b>Hello {{name}}</b>!', name=name)
+
+run(host='localhost', port=8080)
+'''
+  
