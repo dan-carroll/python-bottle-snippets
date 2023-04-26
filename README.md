@@ -12,5 +12,6 @@ Collection of code snippets for the bottle web framework.
 - [Bottle-Redis](https://github.com/bottlepy/bottle-redis) by Bottle.py
 - [Cork - Authentication for the Bottle web framework](https://github.com/FedericoCeratto/bottle-cork)
   - [Cork documentation](https://cork.readthedocs.io/en/latest/)
-  
+- [bottle-websocket](https://github.com/zeekay/bottle-websocket) adds websocket capabilities to bottle
+
 ## [The bottlepy development blog](https://blog.bottlepy.org/)
