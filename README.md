@@ -13,5 +13,12 @@ Collection of code snippets for the bottle web framework.
 - [Cork - Authentication for the Bottle web framework](https://github.com/FedericoCeratto/bottle-cork)
   - [Cork documentation](https://cork.readthedocs.io/en/latest/)
 - [bottle-websocket](https://github.com/zeekay/bottle-websocket) adds websocket capabilities to bottle
+- [bottle-sqlalchemy](https://github.com/iurisilvio/bottle-sqlalchemy) integrates SQLAlchemy with your Bottle application
+- [bottle-mvc](https://github.com/salimane/bottle-mvc) boilerplate application structured following the MVC pattern using Bottle micro python framework
+- [webargs](https://github.com/marshmallow-code/webargs) is a Python library for parsing and validating HTTP request objects
+  - [webargs documentation](https://webargs.readthedocs.io/en/latest/)
 
 ## [The bottlepy development blog](https://blog.bottlepy.org/)
+
+## [Python Markdown Editor](https://github.com/ncornette/Python-Markdown-Editor) Standalone editor for your local markdown files
+### [Python Markdown Editor Webpage](https://python-markdown.github.io/)
