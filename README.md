@@ -3,3 +3,10 @@ Collection of code snippets for the bottle web framework.
 
 ## [Bottle: Python Web Framework](https://github.com/bottlepy/bottle#bottle-python-web-framework) on [GitHub](https://github.com/)
 [Bottle](https://bottlepy.org/docs/dev/) is a fast, simple and lightweight WSGI micro web-framework for Python.
+
+## Other Bottle projects on GitHub
+- [Bottle Dependency Injection](https://github.com/bottlepy/bottle-inject)
+- [Bottle MongoDB](https://github.com/bottlepy/bottle-mongo)
+- [Bottle Extras Plugin Collection](https://github.com/bottlepy/bottle-extras)
+- [Bottle Boilerplate](https://github.com/bottlepy/bottle-boilerplate)
+- [Bottle-Redis](https://github.com/bottlepy/bottle-redis)
