@@ -119,6 +119,21 @@ def error404(error):
     return 'Nothing here, sorry'
 ```
 
+Abort() function short cut:
+```python
+from bottle import route, abort
+@route('/restricted')
+def restricted():
+    abort(401, "Sorry, access denied.")
+```
+And redirect:
+```python
+rom bottle import route, redirect
+@route('/wrong/url')
+def wrong():
+    redirect("/right/url")
+```
+
 ### [Content Generation](https://bottlepy.org/docs/dev/tutorial.html#generating-content)
 Changing the Default Encoding:
 ```python
