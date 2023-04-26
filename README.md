@@ -10,3 +10,5 @@ Collection of code snippets for the bottle web framework.
 - [Bottle Extras Plugin Collection](https://github.com/bottlepy/bottle-extras)
 - [Bottle Boilerplate](https://github.com/bottlepy/bottle-boilerplate)
 - [Bottle-Redis](https://github.com/bottlepy/bottle-redis)
+
+## [The bottlepy development blog](https://blog.bottlepy.org/)
