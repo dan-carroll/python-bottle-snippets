@@ -199,3 +199,21 @@ def hello():
     name = request.cookies.username or 'Guest'
     return template('Hello {{name}}', name=name)
 ```
+
+#### [Formsdict](https://bottlepy.org/docs/dev/tutorial.html#introducing-formsdict)
+Bottle uses a special type of dictionary to store form data and cookies.
+Attribute access:
+```python
+name = request.cookies.name
+
+# is a shortcut for:
+
+name = request.cookies.getunicode('name') # encoding='utf-8' (default)
+
+# which basically does this:
+
+try:
+    name = request.cookies.get('name', '').decode('utf-8')
+except UnicodeError:
+    name = u''
+```
