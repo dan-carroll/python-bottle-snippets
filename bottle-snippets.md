@@ -321,3 +321,14 @@ def do_upload():
     upload.save(save_path) # appends upload.filename automatically
     return 'OK'
 ```
+
+### [WSGI Environment](https://bottlepy.org/docs/dev/tutorial.html#wsgi-environment)
+Access WSGI environ variables directly:
+```python
+@route('/my_ip')
+def show_ip():
+    ip = request.environ.get('REMOTE_ADDR')
+    # or ip = request.get('REMOTE_ADDR')
+    # or ip = request['REMOTE_ADDR']
+    return template("Your IP is: {{ip}}", ip=ip)
+```
