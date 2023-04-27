@@ -17,6 +17,7 @@ Collection of code snippets for the bottle web framework.
 - [bottle-mvc](https://github.com/salimane/bottle-mvc) boilerplate application structured following the MVC pattern using Bottle micro python framework
 - [webargs](https://github.com/marshmallow-code/webargs) is a Python library for parsing and validating HTTP request objects
   - [webargs documentation](https://webargs.readthedocs.io/en/latest/)
+- [bottle-vue-kickstart](https://github.com/truewebartisans/bottle-vue-kickstart) - Very basic Bottle kickstart kit with Vue.js and Webpack
 
 ## [The bottlepy development blog](https://blog.bottlepy.org/)
 
