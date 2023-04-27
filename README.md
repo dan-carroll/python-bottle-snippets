@@ -22,6 +22,7 @@ Collection of code snippets for the bottle web framework.
 - [bottle_jwt](https://github.com/agile4you/bottle-jwt): JSON Web Token authentication plugin for bottle.py
 - [bottle-rest](https://github.com/Bystroushaak/bottle-rest) - used to make easier creating REST applications using Bottle web framework.
   - Full module documentation and description can be found at [Read the Docs](https://github.com/Bystroushaak/bottle-rest)
+- [Simple python Bottle application](https://github.com/garutilorenzo/simple-bottlepy-application) A very simple web application written in python.
 
 ## [The bottlepy development blog](https://blog.bottlepy.org/)
 
