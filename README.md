@@ -20,6 +20,8 @@ Collection of code snippets for the bottle web framework.
 - [bottle-vue-kickstart](https://github.com/truewebartisans/bottle-vue-kickstart) - Very basic Bottle kickstart kit with Vue.js and Webpack
 - [wsgi-request-logger](https://github.com/pklaus/wsgi-request-logger) - Request Logging for WSGI Web Applications
 - [bottle_jwt](https://github.com/agile4you/bottle-jwt): JSON Web Token authentication plugin for bottle.py
+- [bottle-rest](https://github.com/Bystroushaak/bottle-rest) - used to make easier creating REST applications using Bottle web framework.
+  - Full module documentation and description can be found at [Read the Docs](https://github.com/Bystroushaak/bottle-rest)
 
 ## [The bottlepy development blog](https://blog.bottlepy.org/)
 
