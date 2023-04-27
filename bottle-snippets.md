@@ -354,7 +354,7 @@ def hello(name='World'):
 ```
 
 Example template syntax:
-```liquid
+```html
 %if name == 'World':
     <h1>Hello {{name}}!</h1>
     <p>This is a test.</p>
