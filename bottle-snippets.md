@@ -189,6 +189,17 @@ def restricted_area():
         return "You are not logged in. Access denied."
 ```
 
+A simple cookie-based view counter:
+```python
+from bottle import route, request, response
+@route('/counter')
+def counter():
+    count = int( request.cookies.get('counter', '0') )
+    count += 1
+    response.set_cookie('counter', str(count))
+    return 'You visited this page %d times' % count
+```
+
 ### [Request Data](https://bottlepy.org/docs/dev/tutorial.html#request-data)
 Cookies, HTTP header, HTML \<form\> fields and other request data is available through the global request object.
 ```python
@@ -229,4 +240,60 @@ WTForms support:
 'GÃ¶ttingen' # An utf8 string provisionally decoded as ISO-8859-1 by the server
 >>> request.query.city
 'Göttingen'  # The same string correctly re-encoded as utf8 by bottle
+```
+
+### [HTTP Headers](https://bottlepy.org/docs/dev/tutorial.html#http-headers)
+WSGIHeaderDict is basically a dictionary with case-insensitive keys:
+```python
+from bottle import route, request
+@route('/is_ajax')
+def is_ajax():
+    if request.headers.get('X-Requested-With') == 'XMLHttpRequest':
+        return 'This is an AJAX request'
+    else:
+        return 'This is a normal request'
+```
+
+### [Query Variables](https://bottlepy.org/docs/dev/tutorial.html#query-variables)
+The query string (as in /forum?id=1&page=5) is commonly used to transmit a small number of key/value pairs to the server.
+```python
+from bottle import route, request, response, template
+@route('/forum')
+def display_forum():
+    forum_id = request.query.id
+    page = request.query.page or '1'
+    return template('Forum ID: {{id}} (page {{page}})', id=forum_id, page=page)
+```
+
+### [HTML \<form\> Handling](https://bottlepy.org/docs/dev/tutorial.html#html-form-handling)
+A typical \<form\> looks something like this:
+```html
+<form action="/login" method="post">
+    Username: <input name="username" type="text" />
+    Password: <input name="password" type="password" />
+    <input value="Login" type="submit" />
+</form>
+```
+Server side code may look like this:
+```python
+from bottle import route, request
+
+@route('/login')
+def login():
+    return '''
+        <form action="/login" method="post">
+            Username: <input name="username" type="text" />
+            Password: <input name="password" type="password" />
+            <input value="Login" type="submit" />
+        </form>
+    '''
+
+@route('/login', method='POST')
+def do_login():
+    username = request.forms.get('username')
+    password = request.forms.get('password')
+    if check_login(username, password):
+        return "<p>Your login information was correct.</p>"
+    else:
+        return "<p>Login failed.</p>"
 ```
