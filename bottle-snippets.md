@@ -190,7 +190,7 @@ def restricted_area():
 ```
 
 ### [Request Data](https://bottlepy.org/docs/dev/tutorial.html#request-data)
-Cookies, HTTP header, HTML <form> fields and other request data is available through the global request object.
+Cookies, HTTP header, HTML \<form\> fields and other request data is available through the global request object.
 ```python
 from bottle import request, route, template
 
