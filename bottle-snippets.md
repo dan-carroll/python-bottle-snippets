@@ -332,3 +332,23 @@ def show_ip():
     # or ip = request['REMOTE_ADDR']
     return template("Your IP is: {{ip}}", ip=ip)
 ```
+
+## [Templates](https://bottlepy.org/docs/dev/tutorial.html#templates)
+Bottle comes with a fast and powerful built-in template engine called [SimpleTemplate Engine](https://bottlepy.org/docs/dev/stpl.html). To render a template you can use the [template() function](https://bottlepy.org/docs/dev/api.html#bottle.template) or the [view() decorator](https://bottlepy.org/docs/dev/api.html#bottle.view).
+
+Simple example of how to render a template:
+```python
+@route('/hello')
+@route('/hello/<name>')
+def hello(name='World'):
+    return template('hello_template', name=name)
+```
+
+view() decorator example:
+```python
+@route('/hello')
+@route('/hello/<name>')
+@view('hello_template')
+def hello(name='World'):
+    return dict(name=name)
+```
