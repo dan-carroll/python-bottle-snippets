@@ -202,6 +202,7 @@ def hello():
 
 #### [Formsdict](https://bottlepy.org/docs/dev/tutorial.html#introducing-formsdict)
 Bottle uses a special type of dictionary to store form data and cookies.
+
 Attribute access:
 ```python
 name = request.cookies.name
@@ -216,4 +217,16 @@ try:
     name = request.cookies.get('name', '').decode('utf-8')
 except UnicodeError:
     name = u''
+```
+Multiple values per key:
+```python
+for choice in request.forms.getall('multiple_choice'):
+    do_something(choice)
+```
+WTForms support:
+```python
+>>> request.query['city']
+'GÃ¶ttingen' # An utf8 string provisionally decoded as ISO-8859-1 by the server
+>>> request.query.city
+'Göttingen'  # The same string correctly re-encoded as utf8 by bottle
 ```
