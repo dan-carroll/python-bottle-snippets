@@ -18,6 +18,7 @@ Collection of code snippets for the bottle web framework.
 - [webargs](https://github.com/marshmallow-code/webargs) is a Python library for parsing and validating HTTP request objects
   - [webargs documentation](https://webargs.readthedocs.io/en/latest/)
 - [bottle-vue-kickstart](https://github.com/truewebartisans/bottle-vue-kickstart) - Very basic Bottle kickstart kit with Vue.js and Webpack
+- [wsgi-request-logger](https://github.com/pklaus/wsgi-request-logger) - Request Logging for WSGI Web Applications
 
 ## [The bottlepy development blog](https://blog.bottlepy.org/)
 
