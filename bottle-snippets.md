@@ -188,3 +188,14 @@ def restricted_area():
     else:
         return "You are not logged in. Access denied."
 ```
+
+### [Request Data](https://bottlepy.org/docs/dev/tutorial.html#request-data)
+Cookies, HTTP header, HTML <form> fields and other request data is available through the global request object.
+```python
+from bottle import request, route, template
+
+@route('/hello')
+def hello():
+    name = request.cookies.username or 'Guest'
+    return template('Hello {{name}}', name=name)
+```
