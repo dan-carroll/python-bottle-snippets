@@ -363,3 +363,88 @@ Example template syntax:
     <p>How are you?</p>
 %end
 ```
+
+## [Plugins](https://bottlepy.org/docs/dev/tutorial.html#plugins)
+The SQLitePlugin plugin for example:
+```python
+from bottle import route, install, template
+from bottle_sqlite import SQLitePlugin
+
+install(SQLitePlugin(dbfile='/tmp/test.db'))
+
+@route('/show/<post_id:int>')
+def show(db, post_id):
+    c = db.execute('SELECT title, content FROM posts WHERE id = ?', (post_id,))
+    row = c.fetchone()
+    return template('show_post', title=row['title'], text=row['content'])
+
+@route('/contact')
+def contact_page():
+    ''' This callback does not need a db connection. Because the 'db'
+        keyword argument is missing, the sqlite plugin ignores this callback
+        completely. '''
+    return template('contact')
+```
+
+Plugin installed application-wide:
+```python
+from bottle_sqlite import SQLitePlugin
+install(SQLitePlugin(dbfile='/tmp/test.db'))
+```
+
+Uninstall Plugins:
+```python
+sqlite_plugin = SQLitePlugin(dbfile='/tmp/test.db')
+install(sqlite_plugin)
+
+uninstall(sqlite_plugin) # uninstall a specific plugin
+uninstall(SQLitePlugin)  # uninstall all plugins of that type
+uninstall('sqlite')      # uninstall all plugins with that name
+uninstall(True)          # uninstall all plugins at once
+```
+
+Route-Specific Installation:
+```python
+sqlite_plugin = SQLitePlugin(dbfile='/tmp/test.db')
+
+@route('/create', apply=[sqlite_plugin])
+def create(db):
+    db.execute('INSERT INTO ...')
+```
+
+Blacklisting Plugins:
+```python
+sqlite_plugin = SQLitePlugin(dbfile='/tmp/test1.db')
+install(sqlite_plugin)
+
+dbfile1 = '/tmp/test1.db'
+dbfile2 = '/tmp/test2.db'
+
+@route('/open/<db>', skip=[sqlite_plugin])
+def open_db(db):
+    # The 'db' keyword argument is not touched by the plugin this time.
+
+    # The plugin handle can be used for runtime configuration, too.
+    if db == 'test1':
+        sqlite_plugin.dbfile = dbfile1
+    elif db == 'test2':
+        sqlite_plugin.dbfile = dbfile2
+    else:
+        abort(404, "No such database.")
+
+    return "Database File switched to: " + sqlite_plugin.dbfile
+```
+
+### [Plugins and Sub-Applications](https://bottlepy.org/docs/dev/tutorial.html#plugins-and-sub-applications)
+Should not affect sub-applications mounted with [Bottle.mount()](https://bottlepy.org/docs/dev/api.html#bottle.Bottle.mount):
+```python
+root = Bottle()
+root.mount('/blog', apps.blog)
+
+@root.route('/contact', template='contact')
+def contact():
+    return {'email': 'contact@example.com'}
+
+root.install(plugins.WTForms())
+```
+
