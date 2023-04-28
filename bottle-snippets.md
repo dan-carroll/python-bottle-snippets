@@ -33,6 +33,37 @@ def greet(name='Stranger'):
     return template('Hello {{name}}, how are you?', name=name)
 ```
 
+Simple message display (instead of hello):
+```python
+from bottle import route, run
+
+@route('/message')
+def hello():
+    return "Today is a beautiful day"
+```
+
+### Simple Examples
+
+#### Passing JSON Data
+Bottle automatically transforms Python dictionaries into JSON:
+```python
+from bottle import route, run
+
+@route('/cars')
+def getcars():
+
+    cars = [ {'name': 'Audi', 'price': 52642},
+        {'name': 'Mercedes', 'price': 57127},
+        {'name': 'Skoda', 'price': 9000},
+        {'name': 'Volvo', 'price': 29000},
+        {'name': 'Bentley', 'price': 350000},
+        {'name': 'Citroen', 'price': 21000},
+        {'name': 'Hummer', 'price': 41400},
+        {'name': 'Volkswagen', 'price': 21600} ]
+
+    return dict(data=cars)
+```
+
 ### [Dynamic Routes](https://bottlepy.org/docs/dev/tutorial.html#dynamic-routes)
 Dynamic routes with wildcards:
 ```python
