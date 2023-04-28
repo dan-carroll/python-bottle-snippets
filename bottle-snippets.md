@@ -448,3 +448,60 @@ def contact():
 root.install(plugins.WTForms())
 ```
 
+### [List of Available Plugins](https://bottlepy.org/docs/dev/plugins/index.html#list-of-available-plugins)
+This is a list of third-party plugins that add extend Bottles core functionality or integrate other libraries with the Bottle framework.
+
+Have a look at Plugins for general questions about plugins (installation, usage). If you plan to develop a new plugin, the Plugin Development Guide may help you.
+
+#### [Bottle-Beaker](https://pypi.org/project/bottle-beaker/)
+    Beaker to session and caching library with WSGI Middleware
+#### [Bottle-Cork](https://pypi.org/project/bottle-cork/)
+##### [Cork - read the docs](https://cork.readthedocs.io/en/latest/)
+    Cork provides a simple set of methods to implement Authentication and Authorization in web applications based on Bottle.
+#### [Bottle-Cors-plugin](https://pypi.org/project/bottle-cors-plugin/)
+    Cors-plugin is the easiest way to implement cors on your bottle web application
+#### [Bottle-Extras](https://pypi.org/project/bottle-extras/)
+    Meta package to install the bottle plugin collection.
+#### [Bottle-Flash](https://pypi.org/project/bottle-flash/)
+    flash plugin for bottle
+#### [Bottle-Hotqueue](https://pypi.org/project/bottle-hotqueue/)
+    FIFO Queue for Bottle built upon redis
+#### [Macaron](https://pypi.org/project/macaron/)
+##### [Macaron documentation](https://nobrin.github.io/macaron/)
+    Macaron is an object-relational mapper (ORM) for SQLite.
+#### [Bottle-Memcache](https://pypi.org/project/bottle-memcache/)
+    Memcache integration for Bottle.
+#### [Bottle-Mongo](https://pypi.org/project/bottle-mongo/)
+    MongoDB integration for Bottle
+#### [Bottle-OAuthlib](https://pypi.org/project/bottle-oauthlib/)
+    Adapter for oauthlib - create your own OAuth2.0 implementation
+#### [Bottle-Redis](https://pypi.org/project/bottle-redis/)
+    Redis integration for Bottle.
+#### [Bottle-Renderer](https://pypi.org/project/bottle-renderer/)
+    Renderer plugin for bottle
+#### [Bottle-Servefiles](https://pypi.org/project/bottle-servefiles/)
+    A reusable app that serves static files for bottle apps
+#### [Bottle-Sqlalchemy](https://pypi.org/project/bottle-sqlalchemy/)
+    SQLAlchemy integration for Bottle.
+#### [Bottle-Sqlite](https://pypi.org/project/bottle-sqlite/)
+    SQLite3 database integration for Bottle.
+#### [Bottle-Web2pydal](https://pypi.org/project/bottle-web2pydal/)
+    Web2py Dal integration for Bottle.
+#### [Bottle-Werkzeug](https://pypi.org/project/bottle-werkzeug/)
+    Integrates the werkzeug library (alternative request and response objects, advanced debugging middleware and more).
+#### [bottle-smart-filters](https://github.com/agile4you/bottle-smart-filters/)
+    Bottle Querystring smart guessing.
+#### [bottle-jwt](https://github.com/agile4you/bottle-jwt/)
+    JSON Web Token authentication plugin for bottle.py
+#### [Bottle-jwt](https://github.com/agalera/bottlejwt)
+    JWT integration for bottle
+#### [canister](https://github.com/dagnelies/canister)
+    a bottle wrapper to provide logging, sessions and authentication
+#### [bottle-cerberus](https://github.com/agalera/bottle-cerberus)
+    Cerberus integration for bottle
+#### [Bottle-errorsrest](https://github.com/agalera/bottle-errorsrest)
+    All errors generated from bottle are returned in json
+#### [Bottle-tools](https://github.com/theSage21/bottle-tools)
+    Decorators that auto-supply function arguments using POST/query string data.
+
+Plugins listed here are not part of Bottle or the Bottle project, but developed and maintained by third parties.
