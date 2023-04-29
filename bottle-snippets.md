@@ -4,7 +4,7 @@ Much of this information is gleaned from many online sources. I wanted to includ
 ## Bottle
 [Bottle](https://bottlepy.org/docs/dev/) is a fast, simple and lightweight WSGI micro web-framework for Python.
 
-**Table of Contents**
+**<ins>Table of Contents</ins>**
 - [Hello World](#hello-world-in-a-bottle)
 - [Simple Examples(#simple-examples)
 - [Dynamic Routes](#dynamic-routes)
