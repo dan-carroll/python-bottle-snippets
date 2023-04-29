@@ -17,7 +17,10 @@ Much of this information is gleaned from many online sources. I wanted to includ
 - [Formsdict](#formsdict)
 - [HTTP Headers](#http-headers)
 - [Query Variables](#query-variables)
-- 
+- [HTML Form Handling](#html-form-handling)
+- [File Uploads](#file-uploads)
+- [WSGI Environment](#wsgi-environment)
+- [Templates](#templates)
 
 ### [“Hello World” in a bottle](https://bottlepy.org/docs/dev/tutorial.html#quickstart-hello-world)
 A proper hello world:
