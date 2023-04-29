@@ -562,7 +562,7 @@ Plugins listed here are not part of Bottle or the Bottle project, but developed 
 
 ## Example Apps
 
-### [python bottle and ajax tutorial](https://enricorossi.org/blog/2012/python_bottle_and_ajax/)
+### [python bottle and ajax](https://enricorossi.org/blog/2012/python_bottle_and_ajax/)
 Renders a page template which sends a js async request (ajax), gets the result in a json form and displays it:
 ```python
 from bottle import route, run, template, get, debug
