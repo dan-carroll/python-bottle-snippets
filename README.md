@@ -1,6 +1,9 @@
 # python-bottle-snippets
 Collection of code snippets for the bottle web framework.
 
+##### [My list of Bottle snippets - and plugins](https://github.com/dan-carroll/python-bottle-snippets/blob/main/bottle-snippets.md)
+##### And a [list of Bottle tutorials](https://github.com/dan-carroll/python-bottle-snippets/blob/main/bottle-tutorials.md)
+
 ## [Bottle: Python Web Framework](https://github.com/bottlepy/bottle#bottle-python-web-framework) on [GitHub](https://github.com/)
 [Bottle](https://bottlepy.org/docs/dev/) is a fast, simple and lightweight WSGI micro web-framework for Python.
 
