@@ -21,6 +21,9 @@ Much of this information is gleaned from many online sources. I wanted to includ
 - [File Uploads](#file-uploads)
 - [WSGI Environment](#wsgi-environment)
 - [Templates](#templates)
+- [Plugins](#plugins)
+- [Plugins and Sub-Applications](#plugins-and-sub-applications)
+- [List of Available Plugins](#list-of-available-plugins)
 
 ### [“Hello World” in a bottle](https://bottlepy.org/docs/dev/tutorial.html#quickstart-hello-world)
 A proper hello world:
