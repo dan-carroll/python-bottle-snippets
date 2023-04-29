@@ -6,6 +6,9 @@ Much of this information is gleaned from many online sources. I wanted to includ
 
 <large><strong>Table of Contents</strong></large>
 - [Hello World](#hello-world-in-a-bottle)
+- [Simple Examples(#simple-examples)
+- [Dynamic Routes](#dynamic-routes)
+- [HTTP Request Methods](#http-request-methods)
 
 ### [“Hello World” in a bottle](https://bottlepy.org/docs/dev/tutorial.html#quickstart-hello-world)
 A proper hello world:
