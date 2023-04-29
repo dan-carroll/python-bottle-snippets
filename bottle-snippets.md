@@ -9,6 +9,15 @@ Much of this information is gleaned from many online sources. I wanted to includ
 - [Simple Examples(#simple-examples)
 - [Dynamic Routes](#dynamic-routes)
 - [HTTP Request Methods](#http-request-methods)
+- [Routing Static Files](#routing-static-files)
+- [Error Pages](#error-pages)
+- [Content Generation](#content-generation)
+- [Cookies](#cookies)
+- [Request Data](#request-data)
+- [Formsdict](#formsdict)
+- [HTTP Headers](#http-headers)
+- [Query Variables](#query-variables)
+- 
 
 ### [“Hello World” in a bottle](https://bottlepy.org/docs/dev/tutorial.html#quickstart-hello-world)
 A proper hello world:
