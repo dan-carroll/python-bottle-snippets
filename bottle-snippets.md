@@ -24,6 +24,8 @@ Much of this information is gleaned from many online sources. I wanted to includ
 - [Plugins](#plugins)
 - [Plugins and Sub-Applications](#plugins-and-sub-applications)
 - [List of Available Plugins](#list-of-available-plugins)
+- [Example Apps](#example-apps)
+  - [python bottle and ajax](#python-bottle-and-ajax)
 
 ### [“Hello World” in a bottle](https://bottlepy.org/docs/dev/tutorial.html#quickstart-hello-world)
 A proper hello world:
